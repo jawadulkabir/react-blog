@@ -1,13 +1,76 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+/* home page, navbar */
+* {
+  font-family: 'Quicksand', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 2px solid rgb(234, 216, 192);
+} 
+
+.navbar h2{
+  color:#f13566;/*f13566*/
+}
+
+.navbar .links{
+  /* outline: 1px solid gold; */
+  margin-left: auto;
+
+}
+
+.navbar a{
+  margin-left: 16px;
+  /* outline: 1px solid violet; */
+  text-decoration: none;
+  padding: 6px;
+}
+
+.navbar a:hover{
+  color: #f14444
+}
+
+.content{
+  max-width: 600px;
+  /* outline: solid 1px; */
+  margin: 20px auto;
+  padding: 20px
+}
+
+
+
+/* blog-review */
+.blog-preview {
+  margin: 10px;
+  padding: 6px;
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+.blog-preview:hover{
+  box-shadow: 1px 3px 5px rgb(232, 228, 228);
+  /* background-color: rgb(242, 242, 242); */
+}
+
+.blog-preview h2{
+  margin-bottom: 8px;
+  color: rgba(222, 70, 70, 0.745);
+}
+
+button{
+  margin: 9px;
+  background-color: beige;
+  border: none;
+  padding: 9px;
+  border-radius: 10px;
+}
+
+button:active{
+  border: 2px solid palegoldenrod;
 }

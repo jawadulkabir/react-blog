@@ -1,14 +1,36 @@
 import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import Navbar from './Navbar';
+import Home from './Home';
 
 function App() {
+  const series = 'the sopranos'
   return (
     <div className="App">
-      <header className="App-header">
+      <Navbar />
+      <div className="content">
+          <Home />
+      </div>
+    </div>
+    // <h1>hello world
+    //   </h1>
+  );
+}
+
+export default App;
+
+
+
+
+
+
+
+/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <h2>bullshit</h2>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -17,9 +39,4 @@ function App() {
         >
           Learn React
         </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+      </header> */

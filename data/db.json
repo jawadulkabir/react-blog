@@ -1,0 +1,36 @@
+{
+    "blogs": [
+      {
+        "title": "Regulate",
+        "body": "just hit the east side of the LBC",
+        "author": "Warren G",
+        "id": 1
+      },
+      {
+        "title": "Bhalo Lage",
+        "body": "Jokhokn dekhi ora kaj kore grame bondore",
+        "author": "Moheen er Ghoraguli",
+        "id": 2
+      },
+      {
+        "title": "BUET",
+        "body": "fucket",
+        "author": "BD",
+        "id": 3
+      },
+      {
+        "title": "Sound of Silence",
+        "body": "hello darknessMY old friend",
+        "author": "Simon",
+        "id": 4
+      }
+    ],
+    "polls": [
+      {
+        "id": 1,
+        "question": "Where do you live?",
+        "answerA": "Bangladesh",
+        "answerB": "Rest of the world"
+      }
+    ]
+  }
