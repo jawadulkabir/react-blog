@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import Bloglist from "./Bloglist"
+import useFetch from "./useFetch"
 
 const Home = () => {
     const handleClick = (e) => {
@@ -43,18 +44,6 @@ const Home = () => {
             'id': 3
         },
     ]
-    const [blogs,setBlogs] = useState(null) //null doesn't work
-
-    const handleDelete = (id) => {
-        if (blogs!=null){
-            const newBlog = blogs.filter((blog) => blog.id!==id);
-            setBlogs(newBlog);
-        }
-        else{
-            setBlogs(null)
-        }
-    }
-    // filter method keeps those elements that return true, and filters the others out
 
 
 
@@ -66,17 +55,8 @@ const Home = () => {
             //empty array causes the function to run only once upon the first render
 
 
-    useEffect(() => {
-        fetch('http://localhost:8000/blogs')
-        .then(res => {
-            return res.json()
-        })
-        .then(data => {
-            console.log(data);
-            setBlogs(data)
-        })
-    }, [])
-     
+    const { data: blogs, isPending, error } = useFetch('http://localhost:8000/blogs')
+
     return (
         <div className="home">  
             <h1>Homepage</h1>
@@ -91,8 +71,9 @@ const Home = () => {
             </div>
             
             {/* pass blogs, title and handleDelete as props to Bloglist */}
-            {blogs && <Bloglist blogs={blogs} title="All Blogs" handleDelete={handleDelete}/>}
-            {blogs && <Bloglist blogs={blogs.filter((blog) => blog.author === "Pussy")} title="Pussy Blogs" handleDelete={handleDelete}/>}
+            {error && <div>{ error }</div>}
+            {isPending && <div>Loading ...</div>}
+            {blogs && <Bloglist blogs={blogs} title="All Blogs"/>}
 
         </div>
         

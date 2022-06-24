@@ -1,4 +1,4 @@
-const Bloglist = ({blogs, title, handleDelete}) => {
+const Bloglist = ({blogs, title}) => {
     // const blogs = props.blogs;
     // const title = props.title;
 
@@ -11,7 +11,6 @@ const Bloglist = ({blogs, title, handleDelete}) => {
                 <div className="blog-preview" key={blog.id}>
                     <h2>{blog.title}</h2>
                     <p>written by {blog.author}</p>
-                    <button onClick={() => handleDelete(blog.id)}>delete blog</button>
                 </div>
             ) //body of anonymous function. usually curly brace.
               //but maybe html, thats's why parentheses???
