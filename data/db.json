@@ -1,36 +1,42 @@
 {
-    "blogs": [
-      {
-        "title": "Regulate",
-        "body": "just hit the east side of the LBC",
-        "author": "Warren G",
-        "id": 1
-      },
-      {
-        "title": "Bhalo Lage",
-        "body": "Jokhokn dekhi ora kaj kore grame bondore",
-        "author": "Moheen er Ghoraguli",
-        "id": 2
-      },
-      {
-        "title": "BUET",
-        "body": "fucket",
-        "author": "BD",
-        "id": 3
-      },
-      {
-        "title": "Sound of Silence",
-        "body": "hello darknessMY old friend",
-        "author": "Simon",
-        "id": 4
-      }
-    ],
-    "polls": [
-      {
-        "id": 1,
-        "question": "Where do you live?",
-        "answerA": "Bangladesh",
-        "answerB": "Rest of the world"
-      }
-    ]
-  }
+  "blogs": [
+    {
+      "title": "Regulate",
+      "body": "just hit the east side of the LBC",
+      "author": "Warren G",
+      "id": 1
+    },
+    {
+      "title": "Sound of Silence",
+      "body": "hello darkness MY old friend",
+      "author": "Simon",
+      "id": 4
+    },
+    {
+      "title": "Italy",
+      "body": "the most beautiful country.\nunbelievable natural beauty and cultural heritafge.",
+      "author": "mario",
+      "id": 5
+    },
+    {
+      "title": "Cycling",
+      "body": "I love cycling so much",
+      "author": "yoshi",
+      "id": 6
+    },
+    {
+      "title": "Nazia",
+      "body": "Young  Tarang",
+      "author": "mario",
+      "id": 7
+    }
+  ],
+  "polls": [
+    {
+      "id": 1,
+      "question": "Where do you live?",
+      "answerA": "Bangladesh",
+      "answerB": "Rest of the world"
+    }
+  ]
+}

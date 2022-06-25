@@ -38,10 +38,10 @@
 }
 
 .content{
+  padding: 20px;
   max-width: 600px;
-  /* outline: solid 1px; */
   margin: 20px auto;
-  padding: 20px
+  /* outline: 1px solid green; */
 }
 
 
@@ -73,4 +73,85 @@ button{
 
 button:active{
   border: 2px solid palegoldenrod;
+}
+
+.blog-preview a{
+  text-decoration: none;
+}
+
+.blog-details h2, p, div{
+  margin: 1rem;
+}
+
+.blog-details h2{
+  color: indigo;
+  font-size: 2.4rem;
+}
+
+.blog-details p{
+  font-size: 0.8rem ;
+}
+
+/* form css */
+/* .create form{
+  width: 600px;
+}
+
+.create, .create form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.create label{
+  display: block;
+  margin: 1rem auto 0;
+  text-align: left;
+} */
+
+.create{
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  /* outline: 2px solid #f13566; */
+  padding: 15px;
+  background-color: rgb(255, 249, 249);
+  box-shadow: 3px 3px 10px rgba(179, 102, 102, 0.2);
+}
+
+.create label{
+  display: block;
+  margin: 1rem 0 0.4rem;
+  text-align: left;
+}
+
+.create h2{
+  font-size: 2.3rem;
+  color:tomato;
+  margin-bottom: 2.2rem;
+}
+
+.create input,textarea,select{
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.create button{
+  background-color: red;
+  color: white;
+  padding: 10px 62px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.create button:hover{
+  background-color: rgb(123, 0, 0);
+}
+
+.create button:active{
+  font-size: 1.03rem;
 }
